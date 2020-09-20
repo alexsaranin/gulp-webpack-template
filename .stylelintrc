@@ -1,0 +1,17 @@
+{
+    "syntax": "scss",
+    "plugins": [
+        "stylelint-order",
+        "stylelint-scss"
+    ],
+    "extends": [
+        "stylelint-config-htmlacademy",
+        "stylelint-order-htmlacademy"
+    ],
+    "rules": {
+        "at-rule-no-unknown": [true, {
+            "ignoreAtRules": ["function", "if", "each", "include", "mixin", "return"]
+        }],
+        "function-calc-no-invalid": true
+    }
+}

@@ -1,0 +1,9 @@
+// 100 высота экрана с вычетом адресной строки.
+// https://github.com/Hiswe/vh-check
+
+@mixin vh-check {
+  height: 100vh;
+  /* If you need to support browser without CSS var support (<= IE11) */
+  height: calc(100vh - var(--vh-offset, 0)); /* stylelint-disable-line */
+  /* enable vh fix */
+}
